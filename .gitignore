@@ -1,0 +1,44 @@
+# Node modules
+node_modules/
+
+# Compiled output
+dist/
+
+# TypeScript
+*.tsbuildinfo
+
+# Environment files
+.env
+
+# Logs
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# SQLite database file
+database.sqlite
+
+# IDE files
+.vscode/
+.idea/
+
+# Miscellaneous
+*.swp
+*.swo
+*.swn
+*.swo
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# NPM package-lock or yarn.lock
+package-lock.json
+yarn.lock
+
+# TypeORM migration files
+src/migration/**/*.ts
+
+# Jest test coverage
+coverage/
