@@ -2,6 +2,7 @@
 import { Router } from 'express';
 import { createUser, deleteUser, getUserById, getUsers, login, registerUser, updateUser } from '../controllers/usuarioController';
 import { getPersonaByCedula } from '../controllers/personaController';
+import { uploadPhoto } from '../controllers/google-register-photo-Controller';
 
 const router = Router();
 
@@ -15,6 +16,8 @@ router.post('/auth/login', login);
 router.post('/register', registerUser);
 
 router.get('/consulta-persona/:cedula', getPersonaByCedula);
+
+router.post('/registro/guardar-foto', uploadPhoto);
 
 
 export default router;
